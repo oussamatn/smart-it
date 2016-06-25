@@ -1,0 +1,29 @@
+<ion-view style="" class=" " id="page19" title="Luminosité">
+    <ion-content class="has-header" padding="true">
+        <form style="" class="list " id="luminosit-form23" ng-model="config">
+            <ion-toggle style="" class=" " id="luminosit-toggle13" toggle-class="toggle-positive" ng-model="config.state" ng-change="updateConfig()">État</ion-toggle>
+
+        <div class="">
+            <!-- <img style="display: block; margin-left: auto; margin-right: auto;" src="img/BAxW6QkhTouk5sETBxdR_graphique-courbes.jpg" height="auto" width="100%"> -->
+            <canvas id="LuminositChart" width="100%" height="100%"></canvas>
+        </div>
+
+            <label style="" id="luminosit-select7" class="item item-select ">
+                <span class="input-label">Fréquence</span>
+                <select ng-model="config.frequence" name="config.frequence" ng-change="updateConfig()">
+                    <option value="1">Toutes les minutes</option>
+                    <option value="10">Toutes les 10 minutes</option>
+                    <option value="60">Toutes les heures</option>
+                </select>
+            </label>
+            <label style="" id="luminosit-select8" class="item item-select ">
+                <span class="input-label">Précision</span>
+                <select name="prec" ng-model="config.precision" ng-change="updateConfig()">
+                    <option value="1">Précision1</option>
+                    <option value="2">Précision2</option>
+                    <option vlaie="3">Précision3</option>
+                </select>
+            </label>
+        </form>
+    </ion-content>
+</ion-view>

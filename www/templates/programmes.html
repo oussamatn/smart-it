@@ -1,0 +1,26 @@
+<ion-view style="" class=" " id="page9" title="Programmation">
+    <ion-content class="has-header" padding="true">
+        <h3 class=" " style="color: rgb(91, 154, 199); font-weight: 400;" id="programmation-heading20">Humidité</h3>
+        <p class=" " style="color:#000000;" id="programmation-markdown9">Donner le seuil d'extinction de la VMC que vous désirez (sachant qu'elle s'active à 65 % pour réduire le taux d'humidité)</p>
+        <form class="list " id="programmation-form25" ng-model="config">
+            <label id="programmation-input33" class="item item-input ">
+                <input type="number" ng-model="config.humi">
+            </label>
+            <h3 class=" " style="color: rgb(255, 238, 54); font-weight: 400;" id="programmation-heading21">Luminosité</h3>
+            <p class=" " style="color:#000000;" id="programmation-markdown10">Donner la luminosité voulue en lux (on recommande en général 400 lux)</p>
+            <label id="programmation-input35" class="item item-input ">
+                <input  type="number" ng-model="config.lumi">
+            </label>
+            <h3 class=" " style="color: rgb(218, 51, 51); font-weight: 400;" id="programmation-heading22">Température</h3>
+            <p class=" " style="color:#000000;" id="programmation-markdown11">Donner la valeur de température que vous désirez (attention à respecter une différence de 20°C entre l'intérieur et l'extérieur)</p>
+            <label id="programmation-input36" class="item item-input " >
+                <input  type="number" ng-model="config.temp">
+            </label>
+            <h3 class=" " style="color: rgb(0, 0, 0); font-weight: 400;" id="programmation-heading23">CO2</h3>
+            <p class=" " style="color:#000000;" id="programmation-markdown12">Donner le seuil d'extinction de la VMC en taux de CO2, sachant qu'elle s'active pour 1000 ppm, et en fait réduire le nombre de ppm</p>
+            <label id="programmation-input37" class="item item-input ">
+                <input  type="number" ng-model="config.co2">
+            </label>
+        </form>
+    </ion-content>
+</ion-view>

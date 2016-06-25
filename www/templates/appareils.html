@@ -1,0 +1,19 @@
+<ion-view style="" class=" " id="page7" title="Appareils">
+    <ion-content class="has-header" padding="true">
+        <form class="list " id="appareils-form8" ng-model="app">
+
+			<ion-toggle style="" class=" " id="luminosit-toggle13" toggle-class="toggle-positive" ng-model="app.relais" ng-change="updateRelais()">Relais1</ion-toggle>
+
+            <ion-item id="appareils-range1" class="range range-positive ">gpio4 
+                <input max="100" min="0" ng-value="app.gpio4" type="range" ng-model="app.gpio4" ng-change="updateGpio4()">
+            </ion-item>
+
+            <ion-item id="appareils-range1" class="range range-positive ">gpio17 
+                <input max="100" min="0" ng-value="app.gpio17" type="range" ng-model="app.gpio17" ng-change="updateGpio17()">
+            </ion-item>
+            
+
+        </form>
+        {{app | json}}
+    </ion-content>
+</ion-view>

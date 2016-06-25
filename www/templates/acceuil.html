@@ -1,0 +1,31 @@
+<ion-view style="" class=" " id="page1" title="Acceuil">
+    <ion-content class="has-header" scroll="false" padding="true">
+        <div style="margin-left: -10px; width: calc(100% + 20px);" class="">
+            <a href="" style="display:block;">
+<!--                 <img style="display: block; margin-left: auto; margin-right: auto;" src="img/OwNHIxZFSdq45yU6PLPd_appart.jpg" height="75%" width="100%">
+             -->            </a>
+        </div>
+        <div style="width: 282.667px; height: 10px;" class="spacer"></div>
+        <ion-list style="" class=" " id="acceuil-list5">
+            <ion-item style="" id="accueil-list-item16" class="item-icon-left  ">
+                <i class="icon owf owf-{{weather.icon}}"></i><p>{{weather.city}} Température: {{weather.temp | number:0}}°C<br> {{weather.desc }} Humidité: {{weather.humidi}} %</p>
+            </ion-item>
+            <ion-item style="" ui-sref="menu.luminosit" id="acceuil-list-item20" class="item-icon-right  ">Luminosité
+                <span class="item-note">État</span>
+                <i class="icon ion-ios-lightbulb" ng-class="Luminosit"></i>
+            </ion-item>
+            <ion-item style="" ui-sref="menu.humidit" id="acceuil-list-item21" class="item-icon-right  ">Humidité
+                <span class="item-note">État</span>
+                <i class="icon ion-waterdrop active" ng-class="Humidi"></i>
+            </ion-item>
+            <ion-item style="" ui-sref="menu.tempRature" id="acceuil-list-item19" class="item-icon-right  ">Température
+                <span class="item-note">État</span>
+                <i class="icon ion-ios-snowy" ng-class="Temp"></i>
+            </ion-item>
+            <ion-item style="" ui-sref="menu.cO2" id="accueil-list-item12" class="item-icon-right dark  ">CO2
+                <span class="item-note">État</span>
+                <i class="icon ion-leaf" ng-class="co2"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
